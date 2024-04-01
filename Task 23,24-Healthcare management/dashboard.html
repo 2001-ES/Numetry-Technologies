@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #d6e34b;
+    }
+    .dashboard {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+    .module {
+        width: 300px;
+        height: 200px;
+        background-color: #f0f0f0;
+        margin: 10px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: transform 0.3s ease;
+        background-color:#9ae870;
+    }
+    .module:hover {
+        transform: scale(1.05);
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 20px;
+    }
+    h1,h2{
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <h1>Welcome to Healthcare Dashboard</h1>
+    <br>
+    <h2>Explore all information at one place</h2>
+    <div class="dashboard">
+        <div class="module">
+            <a href="index.html">Home</a>
+        </div>
+        <div class="module">
+            <a href="BMI.html">BMI Information</a>
+        </div>
+        <div class="module">
+            <a href="g.html">Gyming Exercise</a>
+        </div>
+        <div class="module">
+            <a href="ndp.html">Nutrition Diet Plan</a>
+        </div>
+        <div class="module">
+            <a href="yoga.html">Yoga</a>
+        </div>
+    </div>
+    </body>
+    </html>
+</body>
+</html>
