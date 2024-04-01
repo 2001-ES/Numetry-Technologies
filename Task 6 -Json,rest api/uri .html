@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>URI</h1>
+
+<p id="main"></p>
+
+<script>
+let uri = "my test.asp?name=ståle&car=saab";
+let encoded = encodeURI(uri);
+let decoded = decodeURI(encoded);
+
+document.getElementById("main").innerHTML = "Encoded URI:<br>" + encoded + "<br><br>" + "Decoded URI:<br>" + decoded;
+</script>
+</body>
+</html>
