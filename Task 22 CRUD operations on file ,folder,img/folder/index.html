@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Folder</title>
+</head>
+<body>
+    <input type="file" id="folderInput" webkitdirectory directory multiple>
+    <button onclick="uploadFolder()">Upload Folder</button>
+
+    <script>
+        function uploadFolder() {
+            const folderInput = document.getElementById('folderInput');
+            const files = folderInput.files;
+            
+            
+            for (let i = 0; i < files.length; i++) {
+                const file = files[i];
+                console.log('File:', file);
+                
+            }
+        }
+    </script>
+</body>
+</html>
