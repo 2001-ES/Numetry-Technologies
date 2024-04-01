@@ -1,0 +1,15 @@
+.sprite-container {
+    display: flex;
+}
+
+.sprite-facebook {
+    background-position: 0 0;
+}
+
+.sprite-twitter {
+    background-position: -32px 0;
+}
+
+.sprite-instagram {
+    background-position: -64px 0;
+}

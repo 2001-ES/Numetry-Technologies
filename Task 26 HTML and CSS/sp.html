@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity Example</title>
+    <style>
+        /* Specificity: 0, 0, 0, 1 */
+        p {
+            color: blue;
+        }
+
+        /* Specificity: 0, 0, 1, 0 */
+        .intro {
+            color: red;
+        }
+
+        /* Specificity: 0, 0, 1, 1 */
+        p.intro {
+            color: green;
+        }
+
+        /* Specificity: 0, 1, 0, 0 */
+        #special-paragraph {
+            color: orange;
+        }
+
+        /* Specificity: 1, 0, 0, 0 */
+        body p {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <!-- Specificity: 1, 0, 0, 0 -->
+    <p>This is a paragraph with default color.</p>
+
+    <!-- Specificity: 0, 0, 0, 1 -->
+    <p class="intro">This is a paragraph with class 'intro'.</p>
+
+    <!-- Specificity: 0, 0, 1, 0 -->
+    <p id="special-paragraph">This is a paragraph with id 'special-paragraph'.</p>
+
+    <!-- Specificity: 0, 0, 1, 1 -->
+    <p class="intro">This is a paragraph with class 'intro'.</p>
+
+    <!-- Specificity: 0, 1, 0, 0 -->
+    <p>This is another paragraph within body.</p>
+</body>
+</html>

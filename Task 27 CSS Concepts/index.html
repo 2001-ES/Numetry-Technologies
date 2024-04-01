@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Styling Example</title>
+  <style>
+   
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    
+    nav {
+      background-color: #444;
+      padding: 10px;
+      overflow: hidden;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      float: left;
+    }
+
+    
+    .main-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .article {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      margin: 10px;
+      width: 30%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .article img {
+      width: 100%;
+      height: auto;
+    }
+
+    .article h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .article p {
+      color: #666;
+    }
+
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      margin-top: 20px;
+    }
+
+    
+    @media only screen and (max-width: 768px) {
+      .article {
+        width: 45%;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      .article {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Website</h1>
+  </header>
+  
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="main-content">
+    <div class="article">
+      <img src="images/r1.jpg" height="80px" width="80px">
+      <h2>Article 1</h2>
+      <p>This is paragraph 1</p>
+    </div>
+    <div class="article">
+      <img src="images/r2.jpg"  height="80px" width="80px" >
+      <h2>Article 2</h2>
+      <p>This is paragraph 2</p>
+    </div>
+    <div class="article">
+      <img src="images/r3.jpg"  height="80px" width="80px" >
+      <h2>Article 3</h2>
+      <p>This is paragraph 3</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>2024 My Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
